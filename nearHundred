@@ -1,0 +1,3 @@
+public boolean nearHundred(int n) {
+  return ((n >= (100 - 10)) && (n <= (100 + 10))) || ((n >= (200 - 10)) && (n <= (200 + 10)));
+}
