@@ -10,13 +10,11 @@ public class LotteryGenerator {
 	public static void main (String []args) {
 		Random randGen = new Random();
 		for (int i = 1; i <= 5; ++i){
-			int randInt = randGen.nextInt(76);
+			int randInt = randGen.nextInt(75) + 1;
 			System.out.println(randInt);
 		}
 		
-		for (int ii = 1; ii <= 1; ++ii){
-			int bonus = randGen.nextInt(16);
-			System.out.println(bonus);
-		}
+		int bonus = randGen.nextInt(15) + 1;
+		System.out.println(bonus);
 	}	
 }
