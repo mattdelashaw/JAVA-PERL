@@ -21,7 +21,7 @@ public class LotteryGeneratorGui {
 		}
 		JOptionPane.showMessageDialog(null, "" + Arrays.toString(randInt) + "");
 		}
-		
+		 
 		int yn = JOptionPane.showConfirmDialog(null, "Is there a bonus number?", "Choose One", JOptionPane.YES_NO_OPTION);
 		if(yn == 0){
 			int bRange = Integer.parseInt(JOptionPane.showInputDialog("Input bonus number range, inclusive."));
