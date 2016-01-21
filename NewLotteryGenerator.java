@@ -1,3 +1,8 @@
+/*
+author: matt delashaw
+date: 1-20-16
+bored. lottery number generator. success not guaranteed with use.
+*/
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
