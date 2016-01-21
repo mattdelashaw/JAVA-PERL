@@ -27,7 +27,7 @@ public class NewLotteryGeneratorGui {
 					case 1 : randInt[ii] = instance;
 								break;
 				
-					case 0 : instance = randGen.nextInt(range);
+					case 0 : instance = randGen.nextInt(range + 1);
 								ii = ii - 1;
 								break;
 				}
