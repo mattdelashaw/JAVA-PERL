@@ -1,6 +1,6 @@
 /*
 author: matt delashaw
-date: 1-20-16
+date: 11-23-16
 bored. lottery number generator. success not guaranteed with use.
 */
 import java.util.Random;
@@ -8,12 +8,13 @@ import javax.swing.JOptionPane;
 import java.util.Arrays;
 
 public class NewLotteryGeneratorGui {
-	public static void main (String []args) {
+	public static void main (String[] args) {
 		int duplicate = Integer.parseInt(JOptionPane.showInputDialog("How many tickets do you want to make?"));
 		int digits = Integer.parseInt(JOptionPane.showInputDialog("Input how many numbers (NOT INCLUDING BONUS)."));
 		int range = Integer.parseInt(JOptionPane.showInputDialog("Input highest number range, INCLUSIVE."));
 		
-		Random randGen = new Random();		
+		Random randGen = new Random();	
+		int[][] tickets = new int[duplicate][];	
 		for(int i = 0; i < duplicate; i++) {
 			
 			int[] randInt = new int[digits];
@@ -33,7 +34,9 @@ public class NewLotteryGeneratorGui {
 				}
 				
 			}
-			JOptionPane.showMessageDialog(null, "" + Arrays.toString(randInt) + "");		
+			
+			tickets[i] = randInt;
+			
 		}
 		
 		int yn = JOptionPane.showConfirmDialog(null, "Is there a bonus number?", "Choose One", JOptionPane.YES_NO_OPTION);
@@ -41,7 +44,7 @@ public class NewLotteryGeneratorGui {
 			int bRange = Integer.parseInt(JOptionPane.showInputDialog("Input bonus number range, INCLUSIVE."));
 			for(int d = 0; d < duplicate; d++){
 				int bonus = randGen.nextInt(bRange) + 1;
-				JOptionPane.showMessageDialog(null, "" + bonus + "");
+				JOptionPane.showMessageDialog(null, "" + Arrays.toString(tickets[d]) + "  " + bonus + "");
 			}
 		}
 	}
