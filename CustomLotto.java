@@ -100,11 +100,10 @@ public class CustomLotto{
 	
 	private static void generateTickets(int tick, int nums, int numMax, int bonMax){
 		tickets = new int[tick][nums];
+		bonuses = new int[nums];
+		
 		for(int i = 0; i < tickets.length; i++){
 			numbers = new int[nums];
-			if(bonMax != 0){
-				bonuses = new int[nums];
-			}
 			
 			for(int j = 0; j < numbers.length; j++){
 				int randNum = getRandomNumber(numMax);
