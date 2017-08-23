@@ -10,3 +10,6 @@ After searching through hard drives and not finding much, i remembered all my fi
 There are a few number generator applications in this repo. NO! im not addicted to lottery gambling. I just found it to present a fun challenge. I recently added CustomLotto.java which creates a custom spring layout GUI and error handling. Go hit those big million dollar prizes people! Don't forget about me if you do!
 
 ![simple gui with fields for number inputs](https://github.com/mattdelashaw/JAVA-PERL/blob/master/GuiImg.png)
+
+
+To run the latest project displayed above, download the repo, and extract the CustomLotto* class files, and the spring utility class file, all into the same directory. Open a command prompt or terminal in that directory and enter `java CustomLotto`
